@@ -1,0 +1,6 @@
+{
+  "name": "ayushXsisi SMM Platform",
+  "description": "Modern SMM order collection website for ayushXsisi with automated WhatsApp order dispatch, customer tracking, dynamic service pricing, and a secure private admin management panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
