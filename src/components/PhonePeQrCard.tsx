@@ -16,7 +16,7 @@ export const PhonePeQrCard: React.FC<PhonePeQrCardProps> = ({
   amount,
   orderId,
   upiId = '7033994688-4@ybl',
-  payeeName = 'Shilpi Devi',
+  payeeName = '|Ayush ',
   compact = false,
   className = '',
   showPayeeInfo = true
