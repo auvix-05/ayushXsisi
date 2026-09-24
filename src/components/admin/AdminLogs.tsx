@@ -18,7 +18,7 @@ interface AdminLogsProps {
 }
 
 export const AdminLogs: React.FC<AdminLogsProps> = ({ token }) => {
-  const [whatsappLogs, setWhatsappLogs] = useState<WhatsAppLog[]>([]);
+  const [whatsappLogs, setWhatsappLogs] = useState<WhatsAppLogin[]>([]);
   const [securityLogs, setSecurityLogs] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [activeTab, setActiveTab] = useState<'whatsapp' | 'audit'>('whatsapp');
