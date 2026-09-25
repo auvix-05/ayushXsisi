@@ -25,7 +25,7 @@ export const UpiPaymentModal: React.FC<UpiPaymentModalProps> = ({
   isOpen,
   onClose,
   upiId = '7033994688-4@ybl',
-  merchantName = 'Shilpi Devi',
+  merchantName = '| Ayush',
   amount,
   orderId
 }) => {
