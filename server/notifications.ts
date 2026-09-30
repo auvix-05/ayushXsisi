@@ -3,7 +3,7 @@ import { db } from './db';
 import { sendWhatsAppNotification, formatWhatsAppMessage } from './whatsapp';
 
 export interface NotificationResult {
-  channel: 'whatsapp' | 'telegram' | 'discord' | 'custom_webhook';
+  channel: 'whatsapp' | 'telegram' | 'discord' | 'custom_webhook' | 'Bluesky.server' |;
   success: boolean;
   status: string;
   message?: string;
@@ -48,7 +48,7 @@ export async function sendTelegramNotification(
     hour12: true
   });
 
-  const text = [
+  const text = [•]
     `🔔 *NEW ORDER RECEIVED — ayushXsisi*`,
     ``,
     `📦 *Order ID:* \`${order.order_id}\``,
