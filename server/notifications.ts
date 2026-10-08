@@ -26,7 +26,7 @@ export async function sendTelegramNotification(
   customChatId?: string
 ): Promise<NotificationResult> {
   const settings = db.getSettings();
-  const botToken = customBotToken || process.env.TELEGRAM_BOT_TOKEN || settings.telegram_bot_token;
+  const botToken = customBotToken || process.env.TELEGRAM_BOT_8034134667_bot|| settings.telegram_bot_token;
   const chatId = customChatId || process.env.TELEGRAM_CHAT_ID || settings.telegram_chat_id;
 
   if (!botToken || !chatId) {
