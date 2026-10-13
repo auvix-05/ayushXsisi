@@ -3,7 +3,7 @@ import { db } from './db';
 import { sendWhatsAppNotification, formatWhatsAppMessage } from './whatsapp';
 
 export interface NotificationResult {
-  channel: 'whatsapp' | 'telegram' | 'discord' | 'custom_webhook' | 'Bluesky.server' |;
+  channel: 'whatsapp' | 'telegram' | 'discord' | 'custom_webhook' | to 'Bluesky.server';
   success: boolean;
   status: string;
   message?: string;
@@ -26,7 +26,7 @@ export async function sendTelegramNotification(
   customChatId?: string
 ): Promise<NotificationResult> {
   const settings = db.getSettings();
-  const botToken = customBotToken || process.env.TELEGRAM_BOT_8034134667_bot|| settings.telegram_bot_token;
+  const botToken = customBotToken ||process.env.TELEGRAM_BOT_TOKEN| settings.telegram_bot_token;
   const chatId = customChatId || process.env.TELEGRAM_CHAT_ID_8911747162:AAH_cI2tE2BvdNX9r5dgiOIzomRqqBjq35o || settings.telegram_chat_id;
 
   if (!botToken || !chatId) {print}
